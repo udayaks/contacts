@@ -42,7 +42,7 @@ class ContactForm extends Component {
                     formErrors.email = '';
                 }
                 break;
-            case 'phone':
+            case 'Password':
                 if (!value || value.length === 0) {
                     formErrors.phone = 'Phone is required';
                 }
@@ -86,7 +86,7 @@ class ContactForm extends Component {
             <div className="row">
                 <div className="col">
                     <div>
-                        <h3>Add a new contact</h3>
+                        <h3>login form</h3>
                         <form className="form" onSubmit={this.submitHandler}>
                             <div className="form-group row">
                                 <label htmlFor="" className="control-label col-md-4">
@@ -106,10 +106,10 @@ class ContactForm extends Component {
                             </div>
                             <div className="form-group row">
                                 <label htmlFor="" className="control-label col-md-4">
-                                    Phone number
+                                    Password
                         </label>
                                 <div className="col-md-8">
-                                    <input value={this.state.phone} onChange={this.tfHandler} name="phone" type="text" className="form-control" />
+                                    <input value={this.state.phone} onChange={this.tfHandler} name="Password" type="Password" className="form-control" />
                                 </div>
                             </div>
                             <div className="form-group row">
